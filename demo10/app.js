@@ -6,7 +6,7 @@ const common = require('./module/common.js');
 const path = require('path');
 const url = require('url');
 
-common.getFileMime('.png')
+// common.getFileMime('.png')
 
 http.createServer(function (req, res) {
   // 获取地址 url.parse()解析url  组织get的传值 如all.json?25462812867等 会把解析为all.json

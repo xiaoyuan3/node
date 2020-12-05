@@ -26,8 +26,9 @@ let app = {
     let extname = path.extname(pathname);
 
     if (pathname != '/favicon.ico') {
-      // 异步转为同步   try{ 执行代码 }catch (err){ 抛出异常代码也可不写 } 尝试操作
+      //    try{ 执行代码 }catch (err){ 抛出异常代码也可不写 } 尝试操作
       try {
+        // 异步转为同步
         let data = fs.readFileSync('./' + staticPath + pathname);
 
         if (data) {
@@ -36,7 +37,6 @@ let app = {
           res.end(data);
         }
       } catch (err) {
-
       }
 
     }

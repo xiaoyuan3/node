@@ -15,7 +15,7 @@ const fs = require('fs');
 //   }
 // }
 
-// 性能不号
+
 exports.getFileMime = function (extname) {
   // 读取同步的方法
   var data = fs.readFileSync('./data/mime.json');
