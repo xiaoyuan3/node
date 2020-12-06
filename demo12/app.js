@@ -55,7 +55,7 @@ http.createServer(function (req, res) {
     // 获取post传值
     // let postData = '';
 
-    // // 拿到post传值的数据
+    // // 拿到post传值的数据   应该是  监听data ->  data当参数传递给chunk ->  和 postData 进行拼接
     // req.on('data', (chunk) => {
     //   postData += chunk;
     // })
